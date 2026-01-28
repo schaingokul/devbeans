@@ -16,25 +16,29 @@ import {
 } from "@heroicons/react/24/outline";
 
 const ContactUs = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
+  const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(
+    null,
+  );
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    if (!form.current) return;
 
     emailjs
       .sendForm(
         "service_dclt9uk", // Replace with your actual service ID
         "template_nz3gsvb", // Replace with your actual template ID
         form.current,
-        "6ixpL0JSlarG3DXMk" // Replace with your actual public key
+        "6ixpL0JSlarG3DXMk", // Replace with your actual public key
       )
       .then(
         () => {
           setSubmitStatus("success");
-          form.current.reset();
+          form.current?.reset();
           setIsSubmitting(false);
           setTimeout(() => setSubmitStatus(null), 5000);
         },
@@ -42,7 +46,7 @@ const ContactUs = () => {
           console.error("EmailJS error:", error);
           setSubmitStatus("error");
           setIsSubmitting(false);
-        }
+        },
       );
   };
 
@@ -75,7 +79,7 @@ const ContactUs = () => {
         className="text-lg text-gray-300 mb-12"
       >
         Have a project in mind or want to discuss potential opportunities? Reach
-        out to us - we'd love to hear from you!
+        out to us - we d love to hear from you!
       </motion.p>
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden z-0">
@@ -216,7 +220,7 @@ const ContactUs = () => {
                 <label className="block text-gray-300 mb-3">Your Message</label>
                 <textarea
                   name="message"
-                  rows="5"
+                  rows={5}
                   required
                   className="w-full px-4 py-2 rounded bg-[#07051a] text-white border border-[#2a1b6a]"
                 ></textarea>
