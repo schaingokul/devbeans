@@ -105,9 +105,9 @@ const WhyChooseUs = () => {
                   Growing Expertise
                 </h3>
                 <p className="text-gray-400">
-                  We're a passionate team of developers with hands-on experience
-                  in building 25+ successful web and mobile projects in just one
-                  year.{" "}
+                  We&apos;re a passionate team of developers with hands-on
+                  experience in building 25+ successful web and mobile projects
+                  in just one year.{" "}
                 </p>
               </div>
             </motion.div>
@@ -149,7 +149,8 @@ const WhyChooseUs = () => {
                 <p className="text-gray-400">
                   We offer premium solutions at affordable rates tailored for
                   startups, small businesses, and entrepreneurs. Our streamlined
-                  processes ensure you get the best value for your investment.{" "}
+                  processes ensure you get the best value for your
+                  investment.{" "}
                 </p>
               </div>
             </motion.div>

@@ -45,7 +45,7 @@ const AboutUs = () => {
         {/* Header section */}
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#47042f88] opacity-[0.9] mb-8"
+          className="Welcome-box w-full justify-center py-[8px] px-[16px] border border-[#47042f88] opacity-[0.9] mb-8 flex items-center"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">Dev Beans Team</h1>
@@ -55,7 +55,7 @@ const AboutUs = () => {
           variants={slideInFromLeft(0.3)}
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-white text-center mb-6"
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-t from-purple-500 to-cyan-500">
             About Us
           </span>
         </motion.h1>
@@ -132,9 +132,9 @@ const AboutUs = () => {
         {/* Core values section */}
         <motion.div variants={slideInFromLeft(0.8)} className="w-full mb-20">
           <h2 className="text-3xl font-bold text-white text-center mb-12">
-            Our{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Core Values
+            {/* Our{" "} */}
+            <span className="text-transparent bg-clip-text bg-gradient-to-t from-purple-500 to-cyan-500">
+              Our Core Values
             </span>
           </h2>
 
@@ -153,7 +153,12 @@ const AboutUs = () => {
                 </h3>
               </div>
               <p className="text-gray-400">
-              We are not just here to build — we are here to innovate. Our team is dedicated to crafting standout digital solutions that rise above the ordinary. Whether it's a dynamic website, a CRM system, or a social platform, we always aim to exceed expectations and deliver top-tier quality.
+                We are not just here to build — we are here to innovate. Our
+                team is dedicated to crafting standout digital solutions that
+                rise above the ordinary. Whether it&apos;s a dynamic website, a
+                CRM justify-centers a dynamic website, a CRM system, or a social
+                platform, we always aim to exceed expectations and deliver
+                top-tier quality.
               </p>
             </motion.div>
 
@@ -163,13 +168,16 @@ const AboutUs = () => {
               className="bg-[#0f0a2a] rounded-xl p-8 border border-[#2a1b6a]"
             >
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center mr-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 flex items-center justify-center mr-4">
                   <span className="text-white text-xl font-bold">2</span>
                 </div>
                 <h3 className="text-xl font-bold text-white">Transparency</h3>
               </div>
               <p className="text-gray-400">
-               Every successful project starts with trust. We keep our clients informed at every stage, offering clear timelines, honest feedback, and open communication. From the first idea to the final deployment, you’ll always know where your project stands.
+                Every successful project starts with trust. We keep our clients
+                informed at every stage, offering clear timelines, honest
+                feedback, and open communication. From the first idea to the
+                final deployment, you’ll always know where your project stands.
               </p>
             </motion.div>
 
@@ -179,13 +187,17 @@ const AboutUs = () => {
               className="bg-[#0f0a2a] rounded-xl p-8 border border-[#2a1b6a]"
             >
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center mr-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 flex items-center justify-center mr-4">
                   <span className="text-white text-xl font-bold">3</span>
                 </div>
                 <h3 className="text-xl font-bold text-white">Best Practices</h3>
               </div>
               <p className="text-gray-400">
-              We follow industry-leading standards in every line of code we write. From scalable mobile apps to secure CRM systems, we build with reliability, performance, and long-term maintainability in mind. Best practices aren’t optional — they’re the foundation of everything we do.
+                We follow industry-leading standards in every line of code we
+                write. From scalable mobile apps to secure CRM systems, we build
+                with reliability, performance, and long-term maintainability in
+                mind. Best practices aren’t optional — they’re the foundation of
+                everything we do.
               </p>
             </motion.div>
 
@@ -195,26 +207,29 @@ const AboutUs = () => {
               className="bg-[#0f0a2a] rounded-xl p-8 border border-[#2a1b6a]"
             >
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center mr-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 flex items-center justify-center mr-4">
                   <span className="text-white text-xl font-bold">4</span>
                 </div>
                 <h3 className="text-xl font-bold text-white">Client Focus</h3>
               </div>
               <p className="text-gray-400">
-              We don't just deliver projects — we deliver impact. Your goals drive our work. Our solutions are built to help your business grow, reach your users more effectively, and stand out in a competitive market. Your success is our mission.
+                We don&apos;t just deliver projects — we deliver impact. Your
+                goals drive our work. Our solutions are built to help your
+                business grow, reach your users more effectively, and stand out
+                in a competitive market. Your success is our mission.
               </p>
             </motion.div>
           </div>
         </motion.div>
-   <motion.div
+        <motion.div
           variants={slideInFromLeft(0.8)}
-          className="w-full max-w-4xl bg-gradient-to-r from-[#3a1b6a] to-[#1a103d] rounded-xl p-8 sm:p-12 border border-[#3a1b6a] text-center mb-12"
+          className="w-full max-w-4xl bg-gradient-to- from-[#3a1b6a80] to-[#1a103d] rounded-xl p-8 sm:p-12 border border-[#beb2cf] text-center mb-12"
         >
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Ready to work with passionate nerds?
           </h3>
           <p className="text-gray-300 mb-8">
-            Let's create something amazing together.
+            Let&apos;s create something amazing together.
           </p>
           <motion.a
             whileHover={{ scale: 1.05 }}
@@ -228,9 +243,7 @@ const AboutUs = () => {
         <WhyChooseUs />
         <MeetOurTeam />
         {/* CTA section */}
-     
       </motion.div>
-     
     </motion.div>
   );
 };

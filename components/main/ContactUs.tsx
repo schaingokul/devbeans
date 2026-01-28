@@ -59,7 +59,7 @@ const ContactUs = () => {
     >
       <motion.div
         variants={slideInFromTop}
-        className="Welcome-box py-[8px] px-[7px] border border-[#47042f88] opacity-[0.9] mb-8"
+        className="Welcome-box w-full justify-center py-[8px] px-[16px] border border-[#47042f88] opacity-[0.9] mb-8"
       >
         <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
         <h1 className="Welcome-text text-[13px]">Get In Touch</h1>
@@ -69,9 +69,9 @@ const ContactUs = () => {
         className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6"
       >
         Contact{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+        {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           Our Team
-        </span>
+        </span> */}
       </motion.h1>
 
       <motion.p

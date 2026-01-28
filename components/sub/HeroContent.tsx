@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image"; // ✅ This is correct
 
-
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -21,7 +20,7 @@ const HeroContent = () => {
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start md:ml-[-40px]  sm:ml-[-40px]">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border[#47042f88b]
+          className="Welcome-box w-full justify-center py-[8px] px-[16px] border[#47042f88b]
  opacity-[0.0]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
@@ -32,14 +31,23 @@ const HeroContent = () => {
           className="flex flex-col gap-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-          Providing
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"> the best</span> project experience</span>
+            Providing the <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-t from-purple-500 to-cyan-500">
+              {" "}
+              best project experience
+            </span>{" "}
+            {/* project experience */}
+          </span>
         </motion.div>
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          We are a passionate team of developers, designers, and digital creators dedicated to building powerful, user-centric solutions that drive business success. From intuitive mobile applications to dynamic websites and tailored CRM platforms, we deliver digital experiences that inspire and perform.
+          We are a passionate team of developers, designers, and digital
+          creators dedicated to building powerful, user-centric solutions that
+          drive business success. From intuitive mobile applications to dynamic
+          websites and tailored CRM platforms, we deliver digital experiences
+          that inspire and perform.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
