@@ -152,7 +152,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Call Us</h3>
-                <p className="text-gray-400"> 1234567890</p>
+                <p className="text-gray-400"> 8825856510</p>
               </div>
             </motion.div>
 
@@ -167,7 +167,7 @@ const ContactUs = () => {
                 <h3 className="text-xl font-bold text-white mb-2">
                   Our Location
                 </h3>
-                <p className="text-gray-400">Chennai, Tamil Nadu, India</p>
+                <p className="text-gray-400">Madurai, Tamil Nadu, India</p>
               </div>
             </motion.div>
           </motion.div>
