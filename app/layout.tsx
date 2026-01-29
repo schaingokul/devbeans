@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tech Sparow App",
-  description: "Create your project with them",
+  title: "Dev Beans",
+  description: "# WE WORK FOR YOU",
 };
 
 export default function RootLayout({
@@ -30,10 +30,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
-        <StarsCanvas/>
-        <Navbar/>
+        <StarsCanvas />
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

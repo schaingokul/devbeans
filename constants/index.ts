@@ -11,12 +11,12 @@ export const Skill_data = [
     //   width: 80,
     //   height: 80,
     // },
-    // {
-    //   skill_name: "Java Script",
-    //   Image: "/js.png",
-    //   width: 65,
-    //   height: 65,
-    // },
+    {
+      skill_name: "Java Script",
+      Image: "/js.png",
+      width: 65,
+      height: 65,
+    },
     // {
     //   skill_name: "Tailwind Css",
     //   Image: "/tailwind.png",
@@ -41,12 +41,12 @@ export const Skill_data = [
     //   width: 80,
     //   height: 80,
     // },
-    // {
-    //   skill_name: "Type Script",
-    //   Image: "/ts.png",
-    //   width: 80,
-    //   height: 80,
-    // },
+    {
+      skill_name: "Type Script",
+      Image: "/ts.png",
+      width: 80,
+      height: 80,
+    },
     {
       skill_name: "Next js 13",
       Image: "/next.png",

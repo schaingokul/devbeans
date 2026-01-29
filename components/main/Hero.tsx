@@ -1,7 +1,8 @@
-'use client'
+"use client";
 
 import React from "react";
 import HeroContent from "../sub/HeroContent";
+import StarsCanvas from "./StarBackground";
 
 const Hero = () => {
   return (
@@ -14,7 +15,10 @@ const Hero = () => {
       >
         <source src="/blackhole.webm" type="video/webm" />
       </video>
-      <HeroContent/>
+      <StarsCanvas />
+      <div className="relative z-[3]">
+        <HeroContent />
+      </div>
     </div>
   );
 };
