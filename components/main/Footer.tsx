@@ -24,7 +24,7 @@
 //             </p> */}
 //  <div className="flex flex-row items-center my-[15px] group cursor-pointer">
 //       <RxGithubLogo className="group-hover:text-blue-400 transition-colors" />
-//       <Link 
+//       <Link
 //         href="https://github.com/vigneshbalan-mvgs"
 //         target="_blank"
 //         rel="noopener noreferrer"
@@ -78,15 +78,20 @@
 import Link from "next/link";
 import React from "react";
 import { FaYoutube } from "react-icons/fa";
-import { RxDiscordLogo, RxGithubLogo, RxInstagramLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
+import {
+  RxDiscordLogo,
+  RxGithubLogo,
+  RxInstagramLogo,
+  RxLinkedinLogo,
+  RxTwitterLogo,
+} from "react-icons/rx";
 
 const Footer = () => {
   return (
     <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-4 relative">
       <div className="flex flex-col items-center w-full max-w-7xl mx-auto">
         <div className="w-full h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start justify-between">
-          
-          {/* Community Section */}
+          {/* Community Section 
           <div className="min-w-[200px] h-auto flex flex-col items-center sm:items-start">
             <div className="font-bold text-lg mb-4">Community</div>
             <Link 
@@ -118,69 +123,81 @@ const Footer = () => {
               <RxDiscordLogo className="group-hover:text-indigo-500 transition-colors" />
               <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">Discord</span>
             </Link>
-          </div>
+          </div> */}
 
-          {/* Social Media Section */}
+          {/* Social Media Section 
           <div className="min-w-[200px] h-auto flex flex-col items-center sm:items-start">
             <div className="font-bold text-lg mb-4">Social Media</div>
-            <Link 
+            <Link
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row items-center my-3 group cursor-pointer w-full"
             >
               <RxInstagramLogo className="group-hover:text-pink-500 transition-colors" />
-              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">Instagram</span>
+              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">
+                Instagram
+              </span>
             </Link>
-            
-            <Link 
+
+            <Link
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row items-center my-3 group cursor-pointer w-full"
             >
               <RxTwitterLogo className="group-hover:text-blue-400 transition-colors" />
-              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">Twitter</span>
+              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">
+                Twitter
+              </span>
             </Link>
-            
-            <Link 
+
+            <Link
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row items-center my-3 group cursor-pointer w-full"
             >
               <RxLinkedinLogo className="group-hover:text-blue-600 transition-colors" />
-              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">LinkedIn</span>
+              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">
+                LinkedIn
+              </span>
             </Link>
-          </div>
+          </div>*/}
 
-          {/* About Section */}
+          {/* About Section 
           <div className="min-w-[200px] h-auto flex flex-col items-center sm:items-start">
             <div className="font-bold text-lg mb-4">About</div>
-            <Link 
-              href="/sponsor" 
+            <Link
+              href="/sponsor"
               className="flex flex-row items-center my-3 group cursor-pointer w-full"
             >
-              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">Become Sponsor</span>
+              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">
+                Become Sponsor
+              </span>
             </Link>
-            
-            <Link 
-              href="/about" 
+
+            <Link
+              href="/about"
               className="flex flex-row items-center my-3 group cursor-pointer w-full"
             >
-              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">Learning About Me</span>
+              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">
+                Learning About Me
+              </span>
             </Link>
-            
-            <Link 
-              href="mailto:nasriyafa2808@gmail.com" 
+
+            <Link
+              href="mailto:nasriyafa2808@gmail.com"
               className="flex flex-row items-center my-3 group cursor-pointer w-full"
             >
-              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">nasrin@gmail.com</span>
+              <span className="text-[15px] ml-2 group-hover:text-blue-400 transition-colors">
+                nasrin@gmail.com
+              </span>
             </Link>
-          </div>
+          </div>*/}
         </div>
 
-        <div className='mt-8 mb-4 text-[15px] text-center'>
+        <div className="mt-8 mb-4 text-[15px] text-center">
           &copy; Dev Beans 2025 Inc. All Rights reserved
         </div>
       </div>

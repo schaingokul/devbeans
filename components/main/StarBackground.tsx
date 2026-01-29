@@ -191,7 +191,9 @@ export const StarBackground = (props: StarBackgroundProps) => {
 
   const [sphere] = useState<Float32Array>(
     () =>
-      random.inSphere(new Float32Array(5000), { radius: 1.2 }) as Float32Array,
+      random.inSphere(new Float32Array(1500 * 3), {
+        radius: 1.2,
+      }) as Float32Array,
   );
 
   useFrame((_, delta) => {
