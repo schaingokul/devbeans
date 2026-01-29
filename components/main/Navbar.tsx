@@ -18,7 +18,7 @@
 //             className="cursor-pointer hover:animate-slowspin"
 //           />
 //           <span className="font-extrabold  ml-[6px] hidden md:block text-white ">
-//             Dev 
+//             Dev
 //           </span>
 //           <span className=" font-extrabold text-xl ml-[10px] hidden md:block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ">
 //             Beans
@@ -50,7 +50,7 @@
 // };
 
 // export default Navbar;
-"use client"
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Socials } from "@/constants";
@@ -81,62 +81,67 @@ const Navbar = () => {
           <span className="font-extrabold ml-2 hidden md:block text-white">
             Dev
           </span>
-          <span className="font-extrabold text-xl ml-1 hidden md:block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          <span className="font-extrabold text-xl ml-1 hidden md:block text-transparent bg-clip-text bg-gradient-to-t from-purple-500 to-cyan-500">
             Beans
           </span>
         </a>
-
         {/* Desktop Navigation */}
         <div className="hidden md:flex w-[500px] h-full flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] py-[10px] px-[20px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer hover:text-purple-300 transition-colors">
+            <a
+              href="#about-me"
+              className="cursor-pointer hover:text-purple-300 transition-colors"
+            >
               Home
             </a>
             {/* <a href="#skills" className="cursor-pointer hover:text-purple-300 transition-colors">
               Our Technologies
             </a> */}
-            <a href="#projects" className="cursor-pointer hover:text-purple-300 transition-colors">
+            <a
+              href="#projects"
+              className="cursor-pointer hover:text-purple-300 transition-colors"
+            >
               Our Services
             </a>
-               <a href="#about-us" className="cursor-pointer hover:text-purple-300 transition-colors">
+            <a
+              href="#about-us"
+              className="cursor-pointer hover:text-purple-300 transition-colors"
+            >
               About Us
             </a>
-                    <a href="#contact" className="cursor-pointer hover:text-purple-300 transition-colors">
+            <a
+              href="#contact"
+              className="cursor-pointer hover:text-purple-300 transition-colors"
+            >
               Contact Us
             </a>
           </div>
         </div>
-
         {/* Social Icons - Desktop */}
         <div className="hidden md:flex flex-row gap-5">
           {Socials.map((social) => (
-            <a 
-              href={social.link} 
+            <a
+              href={social.link}
               key={social.name}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image 
-                src={social.src} 
-                alt={social.name} 
-                width={24} 
-                height={24} 
+              <Image
+                src={social.src}
+                alt={social.name}
+                width={24}
+                height={24}
                 className="hover:scale-110 transition-transform"
               />
             </a>
           ))}
         </div>
-
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden text-white focus:outline-none"
           onClick={toggleMobileMenu}
         >
-          {mobileMenuOpen ? (
-            <FaTimes size={24} />
-          ) : (
-            <FaBars size={24} />
-          )}
+          {mobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
 
@@ -144,42 +149,42 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-[65px] left-0 right-0 bg-[#030014] backdrop-blur-md shadow-lg py-4 px-6">
           <div className="flex flex-col space-y-4 text-center">
-            <a 
-              href="#about-me" 
+            <a
+              href="#about-me"
               className="text-gray-200 hover:text-purple-300 transition-colors py-2"
               onClick={toggleMobileMenu}
             >
               About
             </a>
-            <a 
-              href="#skills" 
+            <a
+              href="#skills"
               className="text-gray-200 hover:text-purple-300 transition-colors py-2"
               onClick={toggleMobileMenu}
             >
               Our Skills
             </a>
-            <a 
-              href="#projects" 
+            <a
+              href="#projects"
               className="text-gray-200 hover:text-purple-300 transition-colors py-2"
               onClick={toggleMobileMenu}
             >
               Projects
             </a>
-            
+
             <div className="flex justify-center space-x-6 pt-4">
               {Socials.map((social) => (
-                <a 
-                  href={social.link} 
+                <a
+                  href={social.link}
                   key={social.name}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={toggleMobileMenu}
                 >
-                  <Image 
-                    src={social.src} 
-                    alt={social.name} 
-                    width={24} 
-                    height={24} 
+                  <Image
+                    src={social.src}
+                    alt={social.name}
+                    width={24}
+                    height={24}
                     className="hover:scale-110 transition-transform"
                   />
                 </a>

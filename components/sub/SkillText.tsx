@@ -29,7 +29,7 @@ const SkillText = () => {
       </motion.div>
       <motion.div
         variants={slideInFromRight(0.5)}
-        className="cursive text-[20px] text-gray-400 mb-10 mt-[10px] text-center"
+        className="text-[20px] text-gray-400 mb-10 mt-[10px] text-center"
       >
         We are a passionate team of developers, designers, and digital creators
         dedicated to building powerful, user-centric solutions that drive
