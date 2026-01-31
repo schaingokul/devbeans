@@ -68,7 +68,7 @@ const ContactUs = () => {
         variants={slideInFromLeft(0.3)}
         className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6"
       >
-        Contact{" "}
+        Contact Us{" "}
         {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           Our Team
         </span> */}
@@ -116,7 +116,7 @@ const ContactUs = () => {
 
       <motion.div
         variants={slideInFromLeft(0.2)}
-        className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center"
+        className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center p-8 rounded-xl bg-[#0a052001]/50"
       >
         {/* Left side - Contact info */}
         <motion.div
@@ -129,21 +129,23 @@ const ContactUs = () => {
               whileHover={{ x: 5 }}
               className="bg-[#0f0a2a] rounded-xl p-6 border border-[#2a1b6a] flex items-start"
             >
-              <div className="p-3 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 mr-4 flex-shrink-0">
+              {/* <div className="p-3 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 mr-4 flex-shrink-0">
                 <EnvelopeIcon className="h-6 w-6 text-white" />
-              </div>
+              </div> */}
               <div>
-                <h3 className="text-xl font-bold text-white mb-2">Email Us</h3>
+                <h3 className="text-xl font-bold text-white mb-2 text-center">
+                  We are always ready to help you! and answer your questions.
+                </h3>
                 <a
                   href="mailto:banuv149@gmail.com"
                   className="text-gray-400 hover:text-cyan-400 transition-colors"
                 >
-                  banuv149@gmail.com
+                  {/* We are always ready to help you! and answer your questions. */}
                 </a>
               </div>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               whileHover={{ x: 5 }}
               className="bg-[#0f0a2a] rounded-xl p-6 border border-[#2a1b6a] flex items-start"
             >
@@ -169,7 +171,7 @@ const ContactUs = () => {
                 </h3>
                 <p className="text-gray-400">Madurai, Tamil Nadu, India</p>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </motion.div>
 
@@ -178,10 +180,8 @@ const ContactUs = () => {
           variants={slideInFromRight(0.8)}
           className="w-full lg:w-1/2 h-full"
         >
-          <div className="max-w-2xl mx-auto mt-10 bg-[#0f0a2a] p-6 rounded-xl border border-[#2a1b6a]">
-            <h2 className="text-2xl font-bold text-white mb-6">
-              Send us a message
-            </h2>
+          {/* <div className="max-w-2xl mx-auto mt-10 bg-[#0f0a2a] p-6 rounded-xl border border-[#2a1b6a]">
+            <h2 className="text-2xl font-bold text-white mb-6">Get in Touch</h2>
 
             {submitStatus === "success" && (
               <p className="text-green-400 mb-4">
@@ -234,6 +234,53 @@ const ContactUs = () => {
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
+          </div> */}
+          <div>
+            <div className="w-full max-w-xl rounded-xl p-8 bg-white backdrop-blur-lg border border-white shadow-xl">
+              {/* <!-- Title --> */}
+              <h2 className="text-2xl font-semibold text-gray-900 mb-2">
+                Get in Touch
+              </h2>
+              <p className="text-gray-500 text-sm mb-6">
+                Define your goals and identify areas where AI can add value to
+                your business
+              </p>
+
+              {/* <!-- Form --> */}
+              <form className="space-y-5">
+                <input
+                  type="text"
+                  placeholder="Full name"
+                  className="w-full border-b border-gray-300 focus:border-gray-900 outline-none py-2 text-gray-700"
+                />
+
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="w-full border-b border-gray-300 focus:border-gray-900 outline-none py-2 text-gray-700"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className="w-full border-b border-gray-300 focus:border-gray-900 outline-none py-2 text-gray-700"
+                />
+
+                <textarea
+                  rows={3}
+                  placeholder="Message"
+                  className="w-full border-b border-gray-300 focus:border-gray-900 outline-none py-2 text-gray-700 resize-none"
+                ></textarea>
+
+                {/* <!-- Button --> */}
+                <button
+                  type="submit"
+                  className="mt-6 inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
+                >
+                  Send a message →
+                </button>
+              </form>
+            </div>
           </div>
         </motion.div>
       </motion.div>
